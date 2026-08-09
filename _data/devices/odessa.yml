@@ -1,0 +1,43 @@
+architecture: arm64
+battery: {capacity: 5000, removable: false, tech: 'Li-Po'}
+before_install: {instructions: 'needs_specific_android_fw', lineage_version: 23.2, version: '11'}
+before_recovery_install: {instructions: 'boot_stack', partitions: [dtbo]}
+bluetooth: {profiles: [A2DP + aptX HD], spec: '5.0'}
+cameras:
+  - {flash: 'LED', info: '64 MP (wide)'}
+  - {flash: None, info: '8 MP (ultrawide)'}
+  - {flash: None, info: '2 MP (macro)'}
+  - {flash: None, info: '2 MP (depth)'}
+  - {flash: None, info: '16 MP (Front Facing)'}
+codename: odessa
+cpu: Kryo 470
+cpu_cores: '8'
+cpu_freq: 2 x 2.2 GHz + 6 x 1.8 GHz
+current_branch: 23.2
+dimensions: {depth: 9.7, height: 170, width: 78.1}
+download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
+gpu: Qualcomm Adreno 618
+image: odessa.png
+install_method: fastboot_motorola
+is_ab_device: true
+kernel: {repo: android_kernel_motorola_sm6150, version: '4.14'}
+maintainers: [ARLBR10]
+models: [XT2087-1]
+name: moto g9 plus
+network: [2G GSM, 3G UMTS, 4G LTE]
+peripherals: [3.5mm jack, A-GPS, Accelerometer, Compass, Dual SIM, FM radio, Fingerprint reader, Galileo, GLONASS, GPS, Google Assist Button, Gyroscope, Light sensor, NFC, Proximity sensor, USB OTG]
+ram: 4 GB LPDDR4X
+recovery_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>, then select "Recovery mode" using Volume keys.
+recovery_partition_name: recovery
+recovery_reboot: fastboot_menu
+release: 2020-09-07
+screen: {resolution: '1080x2400', size: 6.81, technology: 'IPS LCD'}
+sdcard: {size_max: '512 GB', slot: 'hybrid'}
+soc: Qualcomm SM7150-AB Snapdragon 730G
+storage: 128 GB UFS 2.1
+tree: android_device_motorola_odessa
+type: phone
+vendor: Motorola
+vendor_short: motorola
+versions: [23.2]
+wifi: 802.11 a/b/g/n/ac
